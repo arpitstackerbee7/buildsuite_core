@@ -4,7 +4,7 @@ authors = [
     { name = "Infraholic Innovations Pvt. Ltd", email = "app@buildsuite.io"}
 ]
 description = "A construction operating system built on Frappe"
-requires-python = ">=3.14"
+requires-python = ">=3.10,<3.13"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
