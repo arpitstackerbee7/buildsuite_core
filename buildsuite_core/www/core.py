@@ -20,7 +20,7 @@ def get_context():
 	context.boot = get_boot()
 	context.frontend_assets = get_frontend_assets()
 	context.title = "Construction"
-	context.favicon = "/private/files/construction.jpeg"
+	context.favicon = "/assets/buildsuite_core/images/construction.jpeg"
 	context.meta = {
 		"title": "Construction",
 		"description": "Construction operations workspace for Construction",

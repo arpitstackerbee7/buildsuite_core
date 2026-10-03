@@ -12,8 +12,8 @@ defineProps({
 
 <template>
 	<img
-		src="/buildsuite-logo.png"
-		alt="BuildSuite"
+		src="/construction.jpeg"
+		alt="Construction"
 		:width="size"
 		:height="size"
 		:style="`width:${size}px;height:${size}px;`"
