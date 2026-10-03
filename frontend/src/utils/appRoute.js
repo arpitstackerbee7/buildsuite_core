@@ -16,7 +16,7 @@ export const APP_ROUTE_NAME = "core";
 export const APP_ROUTE = `/${APP_ROUTE_NAME}`;
 
 // Brand suffix for the browser/document title (e.g. "Projects · BuildSuite Core").
-export const APP_TITLE = "BuildSuite Core";
+export const APP_TITLE = "Construction";
 
 // The whitelisted dev-boot method lives in www/<route>.py, so its dotted path
 // tracks the route name (e.g. buildsuite_core.www.client.get_context_for_dev).

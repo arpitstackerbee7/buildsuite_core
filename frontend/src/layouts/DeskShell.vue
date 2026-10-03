@@ -140,7 +140,7 @@ const navGroups = computed(() => {
 	if (buildsuiteItems.length) {
 		groups.push({
 			key: "buildsuite",
-			title: "BuildSuite",
+			title: "Construction",
 			muted: false,
 			topSeparator: false,
 			items: buildsuiteItems,
@@ -184,12 +184,12 @@ const navGroups = computed(() => {
 					type="button"
 					class="w-full h-full flex items-center justify-between text-left hover:bg-ink-50 pl-3 pr-2"
 					:class="appMenuOpen ? 'bg-ink-50' : ''"
-					title="BuildSuite"
+					title="Construction"
 					@click="toggleAppMenu"
 				>
 					<span class="flex items-center gap-2">
 						<LogoIcon :size="26" />
-						<span class="font-semibold text-ink-900 text-sm">BuildSuite</span>
+						<span class="font-semibold text-ink-900 text-sm">Construction</span>
 					</span>
 					<svg
 						class="w-4 h-4 text-ink-400 transition-transform"
@@ -213,7 +213,7 @@ const navGroups = computed(() => {
 					class="absolute left-2 right-2 top-full mt-1 z-[56] bg-white border border-ink-200 rounded-md shadow-fp-lg py-1"
 				>
 					<div class="px-3 py-2 border-b border-ink-100">
-						<div class="text-xs font-semibold text-ink-900">BuildSuite</div>
+						<div class="text-xs font-semibold text-ink-900">Construction</div>
 						<div class="text-[10px] text-brand-700 mt-0.5">Core edition</div>
 					</div>
 					<button

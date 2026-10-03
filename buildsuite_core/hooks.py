@@ -1,5 +1,5 @@
 app_name = "buildsuite_core"
-app_title = "BuildSuite Core"
+app_title = "Construction"
 app_publisher = "Infraholic Innovations Pvt. Ltd"
 app_description = "A construction operating system built on Frappe"
 app_email = "app@buildsuite.io"

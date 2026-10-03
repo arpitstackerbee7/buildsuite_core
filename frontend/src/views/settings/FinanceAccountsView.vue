@@ -38,7 +38,7 @@ async function reload() {
 onMounted(reload);
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Settings", to: "/settings" },
 	{ label: "Bank & Cash Accounts" },
 ];

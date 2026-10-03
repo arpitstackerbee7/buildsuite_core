@@ -14,7 +14,7 @@ import { getWorkspaceIconPath } from "@/utils/workspaceIcons";
 const store = useDataStore();
 const router = useRouter();
 
-const breadcrumbs = [{ label: "BuildSuite Core", to: "/" }, { label: "Settings" }];
+const breadcrumbs = [{ label: "Construction", to: "/" }, { label: "Settings" }];
 
 const isAdmin = computed(() => store.isAdmin);
 const isBSA = computed(() => store.isBSA);
@@ -82,7 +82,7 @@ const groups = computed(() => [
 			{
 				slug: "core",
 				icon: "puzzle",
-				label: "BuildSuite Core Settings",
+				label: "Construction Settings",
 				desc: "Org-wide BuildSuite toggles — company segregation, default project type, default company.",
 				to: "/settings/core",
 				adminOnly: true,

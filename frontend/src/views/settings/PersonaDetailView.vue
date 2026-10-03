@@ -102,7 +102,7 @@ async function remove() {
 }
 
 const breadcrumbs = () => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Settings", to: "/settings" },
 	{ label: "Personas", to: "/settings/personas" },
 	{ label: props.id },

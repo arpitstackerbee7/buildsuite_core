@@ -51,7 +51,7 @@ function onRowClick(row) {
 }
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Settings", to: "/settings" },
 	{ label: "Personas" },
 ];

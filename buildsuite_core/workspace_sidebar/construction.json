@@ -1,0 +1,101 @@
+{
+ "app": "buildsuite_core",
+ "creation": "2026-10-03 18:22:52.736704",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83c\udfd7\ufe0f",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Site Execution",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83d\udcd0",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Estimation",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83d\uded2",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Procurement",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83e\udd1d",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Subcontract",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83d\udc77\u200d\u2640\ufe0f",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Workforce",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "\ud83d\udcb5",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Finance",
+   "link_to": "BuildSuite",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Projects",
+   "link_to": "Project",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-03 18:22:52.736704",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "module_onboarding": "Construction Onboarding",
+ "name": "Construction",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Construction"
+}

@@ -107,7 +107,7 @@ async function deleteCompany() {
 }
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Settings", to: "/settings" },
 	{ label: "Companies", to: "/settings/companies" },
 ]);

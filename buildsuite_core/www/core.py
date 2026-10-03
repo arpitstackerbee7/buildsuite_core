@@ -14,16 +14,16 @@ no_cache = 1
 
 def get_context():
 	if not has_app_permission():
-		frappe.throw(_("You do not have permission to access BuildSuite Core"), frappe.PermissionError)
+		frappe.throw(_("You do not have permission to access Construction"), frappe.PermissionError)
 
 	context = frappe._dict()
 	context.boot = get_boot()
 	context.frontend_assets = get_frontend_assets()
-	context.title = "BuildSuite Core"
-	context.favicon = "/assets/buildsuite_core/images/bs-icon.svg"
+	context.title = "Construction"
+	context.favicon = "/private/files/construction.jpeg"
 	context.meta = {
-		"title": "BuildSuite Core",
-		"description": "Construction operations workspace for BuildSuite Core",
+		"title": "Construction",
+		"description": "Construction operations workspace for Construction",
 	}
 	return context
 
@@ -35,7 +35,7 @@ def get_context_for_dev():
 	if not frappe.conf.developer_mode:
 		frappe.throw(_("This method is only meant for developer mode"))
 	if not has_app_permission():
-		frappe.throw(_("You do not have permission to access BuildSuite Core"), frappe.PermissionError)
+		frappe.throw(_("You do not have permission to access Construction"), frappe.PermissionError)
 	return get_boot()
 
 
