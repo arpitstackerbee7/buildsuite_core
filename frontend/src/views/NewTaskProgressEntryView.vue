@@ -317,7 +317,7 @@ function cancel() {
 const WEATHER_OPTIONS = ["Clear", "Rainy", "Hot", "Cold", "Storm"];
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Task Progress Entry", to: "/progress-entries" },
 	{ label: "New" },
 ];

@@ -36,7 +36,7 @@ const columns = [
 ];
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Workforce", to: "/workforce" },
 	{ label: "Field Attendance" },
 ];

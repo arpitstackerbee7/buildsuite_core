@@ -155,7 +155,7 @@ const columns = [
 	{ key: "enteredBy", label: "Entered by" },
 ];
 
-const breadcrumbs = [{ label: "BuildSuite Core", to: "/" }, { label: "Task Progress Entry" }];
+const breadcrumbs = [{ label: "Construction", to: "/" }, { label: "Task Progress Entry" }];
 
 const subtitle = computed(() => `${items.value.length} of ${allEntries.value.length}`);
 

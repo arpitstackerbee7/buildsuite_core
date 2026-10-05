@@ -63,7 +63,7 @@ const { selectOptions } = useDoctypeMeta("Estimate Template Row");
 const costHeadOptions = computed(() => selectOptions("cost_head"));
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Estimation", to: "/estimation" },
 	{ label: "Estimate Template", to: "/estimate-template" },
 	{ label: doc.value?.template_name || props.id },

@@ -237,7 +237,7 @@ const subtitle = computed(() => {
 });
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Workforce", to: "/workforce" },
 	{ label: "Field Attendance", to: "/field-attendance" },
 	{ label: props.id },

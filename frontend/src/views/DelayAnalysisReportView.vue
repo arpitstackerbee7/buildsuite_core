@@ -106,7 +106,7 @@ function printReport() {
 }
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Site Execution", to: "/site-execution" },
 	{ label: "Delay Analysis" },
 ];

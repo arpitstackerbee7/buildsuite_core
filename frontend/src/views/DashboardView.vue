@@ -34,7 +34,7 @@ function progressBarColor(p) {
 	return TONE_BAR[p.tone] || "bg-success-500";
 }
 
-const breadcrumbs = [{ label: "BuildSuite Core", to: "/" }, { label: "Dashboard" }];
+const breadcrumbs = [{ label: "Construction", to: "/" }, { label: "Dashboard" }];
 </script>
 
 <template>

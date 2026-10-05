@@ -47,7 +47,7 @@ async function retryAccess() {
 			</h1>
 			<p class="mt-3 text-sm text-ink-600 leading-6">
 				Your account is authenticated, but backend access checks blocked this route.
-				Contact your administrator to request BuildSuite Core roles.
+				Contact your administrator to request Construction roles.
 			</p>
 
 			<div class="mt-6 bg-ink-50 border border-ink-200 rounded-lg p-4">

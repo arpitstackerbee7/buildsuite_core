@@ -222,7 +222,7 @@ const saveLabel = computed(() =>
 	saving.value ? "Saving…" : isEdit.value ? "Save changes" : "Create Subcontractor bill"
 );
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Subcontract", to: "/subcontract" },
 	{ label: "Subcontractor Bills", to: "/subcontractor-bills" },
 	...(isEdit.value

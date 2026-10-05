@@ -832,7 +832,7 @@ const isStageDelayed = computed(() => {
 
 const breadcrumbs = computed(() => {
 	const out = [
-		{ label: "BuildSuite Core", to: "/" },
+		{ label: "Construction", to: "/" },
 		{ label: "Stage Planning", to: "/stage-plannings" },
 	];
 	if (project.value)

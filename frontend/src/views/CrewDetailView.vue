@@ -120,7 +120,7 @@ const subtitle = computed(() => {
 });
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Workforce", to: "/workforce" },
 	{ label: "Crews", to: "/crews" },
 	{ label: doc.value?.crew_name || props.id },

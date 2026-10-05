@@ -73,7 +73,7 @@ const columns = [
 ];
 
 const breadcrumbs = [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Subcontract", to: "/subcontract" },
 	{ label: "Subcontractor Bills" },
 ];

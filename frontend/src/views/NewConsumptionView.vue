@@ -158,7 +158,7 @@ async function onSave() {
 }
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Procurement", to: "/procurement" },
 	{ label: "Material Consumption", to: "/material-consumption" },
 	{ label: editing.value ? props.id : "New" },

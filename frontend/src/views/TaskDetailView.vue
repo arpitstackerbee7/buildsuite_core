@@ -695,7 +695,7 @@ async function confirmDelete() {
 
 const breadcrumbs = computed(() => {
 	const out = [
-		{ label: "BuildSuite Core", to: "/" },
+		{ label: "Construction", to: "/" },
 		{ label: "Task", to: "/tasks" },
 	];
 	if (project.value)

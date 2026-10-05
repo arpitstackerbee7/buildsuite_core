@@ -84,7 +84,7 @@ const columns = [
 	{ key: "raisedDate", label: "Date" },
 ];
 
-const breadcrumbs = [{ label: "BuildSuite Core", to: "/" }, { label: "Scope Change Orders" }];
+const breadcrumbs = [{ label: "Construction", to: "/" }, { label: "Scope Change Orders" }];
 
 function onRowClick(row) {
 	router.push(`/sco/${row.id}`);

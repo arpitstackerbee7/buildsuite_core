@@ -183,7 +183,7 @@ function onCancel() {
 }
 
 const breadcrumbs = computed(() => [
-	{ label: "BuildSuite Core", to: "/" },
+	{ label: "Construction", to: "/" },
 	{ label: "Subcontract", to: "/subcontract" },
 	{ label: "Work Orders", to: "/subcontractor-work-orders" },
 	isEdit.value

@@ -56,7 +56,7 @@ async function onSave() {
 }
 
 const breadcrumbs = [
-  { label: 'BuildSuite Core', to: '/' },
+  { label: 'Construction', to: '/' },
   { label: 'Estimation', to: '/estimation' },
   { label: 'Estimate Template', to: '/estimate-template' },
   { label: 'New' },

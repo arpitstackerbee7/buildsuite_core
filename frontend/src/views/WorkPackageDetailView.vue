@@ -290,7 +290,7 @@ const taskModalOpen = ref(false);
 
 const breadcrumbs = computed(() => {
 	const out = [
-		{ label: "BuildSuite Core", to: "/" },
+		{ label: "Construction", to: "/" },
 		{ label: "Work Package", to: "/work-packages" },
 	];
 	if (project.value)
