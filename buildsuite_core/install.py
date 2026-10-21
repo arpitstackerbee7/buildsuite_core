@@ -232,7 +232,6 @@ def seed_employee_accounting_dimension():
 		ignore_permissions=True
 	)
 
-
 def create_item_group():
     if (
         frappe.db.exists("Item Group", "Raw Material")
