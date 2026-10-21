@@ -234,11 +234,19 @@ def seed_employee_accounting_dimension():
 
 
 def create_item_group():
-	if frappe.db.get_value("Item Group", "Raw Material"):
-		frappe.rename_doc("Item Group", "Raw Material", "Materials", force=1, merge=0)
-	if frappe.db.get_value("Item Group", "Asset"):
-		frappe.rename_doc("Item Group", "Asset", "Assets", force=1, merge=0)
-	frappe.db.commit()
+    if (
+        frappe.db.exists("Item Group", "Raw Material")
+        and not frappe.db.exists("Item Group", "Materials")
+    ):
+        frappe.rename_doc("Item Group", "Raw Material", "Materials", force=1, merge=0)
+
+    if (
+        frappe.db.exists("Item Group", "Asset")
+        and not frappe.db.exists("Item Group", "Assets")
+    ):
+        frappe.rename_doc("Item Group", "Asset", "Assets", force=1, merge=0)
+
+    frappe.db.commit()
 
 
 def before_migrate():
