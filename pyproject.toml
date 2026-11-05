@@ -12,7 +12,8 @@ dependencies = [
     # [tool.bench.frappe-dependencies] below - pip cannot resolve them, which is why the
     # commented-out "frappe~=16.0.0" here could never have worked.
 ]
-
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0-dev,<17.0.0"
 [build-system]
 requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
@@ -26,8 +27,7 @@ build-backend = "flit_core.buildapi"
 # The upper bound matters: without it `bench update` will pull a v17 frappe against v16
 # app code. erpnext@version-16 pins ">=16.21.0,<17.0.0"; the looser floor below matches
 # hrms@version-16.
-[tool.bench.frappe-dependencies]
-frappe = ">=16,<17"
+
 
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
