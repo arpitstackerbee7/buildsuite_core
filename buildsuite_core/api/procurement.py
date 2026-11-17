@@ -41,14 +41,26 @@ def _pending_order_value(mr_names: list[str]) -> float:
 	return flt(total[0][0]) if total else 0.0
 
 
+
 def _on_order() -> dict:
-	"""Submitted POs awaiting delivery (per_received < 100): count + full value."""
-	row = frappe.get_list(
-		"Purchase Order",
-		filters={"docstatus": 1, "per_received": ["<", 100]},
-		fields=[{"COUNT": "name", "as": "count"}, {"SUM": "grand_total", "as": "value"}],
-	)[0]
-	return {"count": row.count or 0, "value": flt(row.value)}
+    """Submitted POs awaiting delivery (per_received < 100): count + full value."""
+    row = frappe.get_list(
+        "Purchase Order",
+        filters={
+            "docstatus": 1,
+            "per_received": ["<", 100]
+        },
+        fields=[
+            "COUNT(name) AS count",
+            "SUM(grand_total) AS value"
+        ],
+    )[0]
+
+    return {
+        "count": row.count or 0,
+        "value": flt(row.value)
+    }
+
 
 
 def _received_this_week() -> dict:
