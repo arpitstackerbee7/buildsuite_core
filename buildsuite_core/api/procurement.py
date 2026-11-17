@@ -42,6 +42,7 @@ def _pending_order_value(mr_names: list[str]) -> float:
 
 
 
+
 def _on_order() -> dict:
     """Submitted POs awaiting delivery (per_received < 100): count + full value."""
     row = frappe.get_list(
@@ -63,14 +64,21 @@ def _on_order() -> dict:
 
 
 
+
+
 def _received_this_week() -> dict:
-	"""Purchase Receipts posted in the last 7 days."""
-	row = frappe.get_list(
-		"Purchase Receipt",
-		filters={"docstatus": 1, "posting_date": [">=", add_days(nowdate(), -7)]},
-		fields=[{"COUNT": "name", "as": "count"}],
-	)[0]
-	return {"count": row.count or 0}
+    """Purchase Receipts posted in the last 7 days."""
+    row = frappe.get_list(
+        "Purchase Receipt",
+        filters={
+            "docstatus": 1,
+            "posting_date": [">=", add_days(nowdate(), -7)]
+        },
+        fields=["COUNT(name) AS count"],
+    )[0]
+
+    return {"count": row.count or 0}
+
 
 
 def _above_estimated_rate() -> dict:
@@ -138,24 +146,37 @@ def _overdue_first(po: dict) -> dict:
 	}
 
 
+
 def _partial_deliveries() -> dict:
-	"""Submitted POs between 1% and 99% received."""
-	row = frappe.get_list(
-		"Purchase Order",
-		filters=[["docstatus", "=", 1], ["per_received", ">", 0], ["per_received", "<", 100]],
-		fields=[{"COUNT": "name", "as": "count"}],
-	)[0]
-	return {"count": row.count or 0}
+    """Submitted POs between 1% and 99% received."""
+    row = frappe.get_list(
+        "Purchase Order",
+        filters=[
+            ["docstatus", "=", 1],
+            ["per_received", ">", 0],
+            ["per_received", "<", 100]
+        ],
+        fields=["COUNT(name) AS count"],
+    )[0]
+
+    return {"count": row.count or 0}
+
+
 
 
 def _received_not_billed() -> dict:
-	"""Submitted Purchase Receipts not yet fully billed."""
-	row = frappe.get_list(
-		"Purchase Receipt",
-		filters={"docstatus": 1, "per_billed": ["<", 100]},
-		fields=[{"COUNT": "name", "as": "count"}],
-	)[0]
-	return {"count": row.count or 0}
+    """Submitted Purchase Receipts not yet fully billed."""
+    row = frappe.get_list(
+        "Purchase Receipt",
+        filters={
+            "docstatus": 1,
+            "per_billed": ["<", 100]
+        },
+        fields=["COUNT(name) AS count"],
+    )[0]
+
+    return {"count": row.count or 0}
+
 
 
 def _recent_receipts() -> list[dict]:
